@@ -1,0 +1,83 @@
+<!--
+title: Instalaciones · 7 pistas de pádel cubiertas en Pozuelo | Padel Bularas
+description: Descubre las instalaciones de Padel Bularas en Pozuelo de Alarcón: 7 pistas de pádel cubiertas, iluminación LED, vestuarios, parking gratuito, cafetería y tienda.
+nav: instalaciones
+preload: img/cubierta-led.webp
+-->
+<section class="page-hero">
+  <div class="page-hero-media"><img src="{{ROOT}}img/cubierta-led.webp" alt="" width="800" height="600" fetchpriority="high"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{ROOT}}index.html">Inicio</a></li><li aria-current="page">Instalaciones</li></ol>
+    <span class="eyebrow">Instalaciones</span>
+    <h1>Hechas para <span class="accent">jugar</span></h1>
+    <p class="lead">{{NUM_PISTAS}} pistas {{TIPO_PISTAS}}, luz LED y todo lo que necesitas antes y después del partido. Llueva, haga frío o apriete el calor.</p>
+    <div class="btn-row"><a class="btn btn-accent btn-arrow" href="{{URL_RESERVAS}}" target="_blank" rel="noopener">Reservar pista</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Las pistas</span>
+      <h2>Bajo cubierta, <span class="accent">siempre a punto</span></h2>
+      <p class="lead">Nuestras pistas están bajo una gran nave cubierta, con césped azul, cristal y una iluminación pensada para que veas cada bola, también a última hora.</p>
+      <ul class="check-list">
+        <li>{{NUM_PISTAS}} pistas cubiertas: juegas los 365 días del año</li>
+        <li>Césped azul con buen bote y mantenimiento constante</li>
+        <li>Iluminación LED uniforme hasta el cierre</li>
+        <li>Abierto todos los días de 9:00 a 23:30, festivos incluidos</li>
+      </ul>
+    </div>
+    <div class="reveal"><img src="{{ROOT}}img/pista-red.webp" alt="Red y pista de césped azul en Padel Bularas" width="800" height="600" loading="lazy" style="border-radius:var(--radius-lg);box-shadow:var(--shadow-lg)"></div>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="servicios-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Servicios</span>
+      <h2 id="servicios-title">Todo lo que necesitas</h2>
+    </div>
+    <div class="grid grid-3 reveal-stagger">
+      <article class="feature"><div class="feature-icon">{{ICON:pista}}</div><h3>{{NUM_PISTAS}} pistas cubiertas</h3><p>Cristal y césped azul, protegidas de la lluvia y del sol.</p></article>
+      <article class="feature"><div class="feature-icon">{{ICON:led}}</div><h3>Iluminación LED</h3><p>Luz homogénea y sin sombras para jugar de noche como de día.</p></article>
+      <article class="feature"><div class="feature-icon">{{ICON:vestuario}}</div><h3>Vestuarios</h3><p>Para cambiarte y ducharte antes o después de jugar.</p></article>
+      <article class="feature"><div class="feature-icon">{{ICON:parking}}</div><h3>Parking gratuito</h3><p>Aparca en la puerta sin coste.</p></article>
+      <article class="feature"><div class="feature-icon">{{ICON:cafe}}</div><h3>Cafetería y snack bar</h3><p>Para el café de antes y el tercer tiempo de después. <a href="{{ROOT}}cafeteria/index.html">Ver zona social</a>.</p></article>
+      <article class="feature"><div class="feature-icon">{{ICON:tienda}}</div><h3>Tienda</h3><p>Pelotas, grips y lo que te haga falta para el partido.</p></article>
+      <article class="feature"><div class="feature-icon">{{ICON:pala}}</div><h3>Alquiler de material</h3><p>¿Vienes con lo puesto? Te dejamos pala para que no te quedes sin jugar.</p></article>
+      <article class="feature"><div class="feature-icon">{{ICON:wifi}}</div><h3>WiFi</h3><p>Conexión gratuita en todo el club.</p></article>
+      <article class="feature"><div class="feature-icon">{{ICON:accesible}}</div><h3>Acceso adaptado</h3><p>Instalaciones accesibles para personas con movilidad reducida.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="galeria-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Galería</span>
+      <h2 id="galeria-title">Así es el club</h2>
+    </div>
+    <div class="gallery reveal-stagger">
+      <figure class="g-big"><img src="{{ROOT}}img/pista-red.webp" alt="Pista de pádel cubierta con red HEAD" width="800" height="600" loading="lazy"><figcaption>Pistas</figcaption></figure>
+      <figure class="g-tall"><img src="{{ROOT}}img/pista-vertical.webp" alt="Nave cubierta de Padel Bularas con estructura verde" width="800" height="1066" loading="lazy"><figcaption>La cubierta</figcaption></figure>
+      <figure><img src="{{ROOT}}img/cubierta-led.webp" alt="Focos LED sobre las pistas" width="800" height="600" loading="lazy"><figcaption>Iluminación LED</figcaption></figure>
+      <figure>{{PH:Vestuarios}}</figure>
+      <figure>{{PH:Cafetería}}</figure>
+      <figure>{{PH:Tienda}}</figure>
+      <figure class="g-big">{{PH:Jugadores en acción}}</figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>¿Echamos un partido?</h2>
+        <p>Reserva en Playtomic en menos de un minuto. Recuerda: las reservas son solo para jugar, no para impartir clases externas. Consulta la <a href="{{NORMATIVA_URL}}" target="_blank" rel="noopener" style="color:inherit">normativa del club</a>.</p>
+      </div>
+      <a class="btn btn-accent btn-arrow" href="{{URL_RESERVAS}}" target="_blank" rel="noopener">Reservar pista</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+<!--
+title: Carrito y pago · Tienda Padel Bularas
+description: Revisa tu carrito y paga de forma segura con Stripe. Recogida gratuita en Padel Bularas, Pozuelo de Alarcón.
+nav: tienda
+-->
+<section class="page-hero page-hero--short">
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{ROOT}}index.html">Inicio</a></li><li><a href="{{ROOT}}tienda/index.html">Tienda</a></li><li aria-current="page">Carrito</li></ol>
+    <h1>Tu <span class="accent">carrito</span></h1>
+  </div>
+</section>
+
+<section class="section section--alt section--tight">
+  <div class="container checkout">
+    <div>
+      <div data-cart-page><p class="muted">Cargando tu carrito…</p></div>
+      <p style="margin-top:1.25rem"><a class="link-arrow" href="{{ROOT}}tienda/index.html" style="flex-direction:row-reverse">Seguir comprando</a></p>
+    </div>
+
+    <aside class="checkout-summary" data-checkout aria-labelledby="pago-title">
+      <h2 id="pago-title">Finalizar compra</h2>
+      <div data-summary-lines></div>
+      <div class="summary-row summary-row--total"><span>Total (IVA incl.)</span><strong data-cart-total>0,00 €</strong></div>
+
+      <form data-checkout-form novalidate style="margin-top:1.5rem">
+        <div class="pickup-box">{{ICON:tienda}}<p><strong>Recogida en el club</strong><br>{{CALLE}}, {{CIUDAD}}. Te avisamos por email cuando esté listo (normalmente en 24 h).</p></div>
+        <div class="form-grid" style="grid-template-columns:1fr">
+          <div class="field"><label for="c-nombre">Nombre y apellidos *</label><input id="c-nombre" name="nombre" autocomplete="name" required><p class="field-error" id="c-nombre-error"></p></div>
+          <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" autocomplete="email" required><p class="field-error" id="c-email-error"></p></div>
+          <div class="field"><label for="c-telefono">Teléfono</label><input id="c-telefono" name="telefono" type="tel" autocomplete="tel"></div>
+          <div class="field"><label class="checkbox"><input id="c-acepta" name="acepta" type="checkbox" required> <span>Acepto las <a href="{{ROOT}}legal/condiciones-venta/index.html" target="_blank">condiciones de venta</a> y la <a href="{{ROOT}}legal/privacidad/index.html" target="_blank">política de privacidad</a>. *</span></label><p class="field-error" id="c-acepta-error"></p></div>
+        </div>
+        <button class="btn btn-accent btn-block btn-arrow" type="submit">{{ICON:candado}} Pagar de forma segura</button>
+        <div class="form-status" role="alert" hidden></div>
+      </form>
+      <div class="pay-methods" aria-label="Métodos de pago"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span>GOOGLE PAY</span></div>
+      <p class="secure">{{ICON:candado}} Serás redirigido a la pasarela segura de Stripe para completar el pago.</p>
+    </aside>
+  </div>
+</section>

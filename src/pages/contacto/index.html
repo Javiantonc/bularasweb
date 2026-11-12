@@ -1,0 +1,46 @@
+<!--
+title: Contacto y cómo llegar | Padel Bularas · Club de pádel en Pozuelo
+description: Contacta con Padel Bularas: Av. de Bularas, 1, 28224 Pozuelo de Alarcón. Teléfono y WhatsApp 689 48 49 44. Abierto todos los días de 9:00 a 23:30.
+nav: contacto
+schema: si
+-->
+<section class="page-hero">
+  <div class="page-hero-media"><img src="{{ROOT}}img/pista-red.webp" alt="" width="800" height="600" fetchpriority="high"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{ROOT}}index.html">Inicio</a></li><li aria-current="page">Contacto</li></ol>
+    <span class="eyebrow">Contacto</span>
+    <h1>Estamos <span class="accent">a un mensaje</span></h1>
+    <p class="lead">Llámanos, escríbenos por WhatsApp o pásate por el club. Abrimos todos los días de 9:00 a 23:30.</p>
+    <div class="btn-row">
+      <a class="btn btn-accent" href="{{WA_URL}}" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:{{TELEFONO_LINK}}">Llamar · {{TELEFONO}}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container contact-grid">
+    <div>
+      <div class="reveal">
+        <h2>Datos de contacto</h2>
+        <p class="lead">Para reservar pista, lo más rápido es <a href="{{URL_RESERVAS}}" target="_blank" rel="noopener">Playtomic</a>. Para todo lo demás, aquí nos tienes.</p>
+      </div>
+      {{INCLUDE:contact-blocks}}
+      <div class="info-card reveal" style="margin-top:1rem">
+        <h3>Horario</h3>
+        <p class="muted" style="margin:0">{{HORARIO_LV}} · {{HORARIO_FS}}</p>
+      </div>
+    </div>
+    <div class="reveal">{{INCLUDE:form}}</div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="llegar-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Cómo llegar</span>
+      <h2 id="llegar-title">Te esperamos en <span class="accent">Bularas</span></h2>
+    </div>
+    <div class="reveal">{{INCLUDE:map}}</div>
+  </div>
+</section>

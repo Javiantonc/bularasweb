@@ -1,0 +1,26 @@
+<!--
+title: ¡Pedido confirmado! · Tienda Padel Bularas
+description: Tu pedido en la tienda de Padel Bularas se ha completado correctamente.
+nav: tienda
+-->
+<section class="page-hero page-hero--short">
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{ROOT}}index.html">Inicio</a></li><li><a href="{{ROOT}}tienda/index.html">Tienda</a></li><li aria-current="page">Pedido confirmado</li></ol>
+  </div>
+</section>
+<section class="section">
+  <div class="container order-ok">
+    <div class="check">{{ICON:check}}</div>
+    <h1>¡Gracias por <span class="accent">tu compra</span>!</h1>
+    <p class="lead" style="margin-inline:auto">Hemos recibido tu pago. Te avisaremos por email cuando tu pedido esté listo para recoger en el club.</p>
+    <div data-order style="margin:2rem 0"></div>
+    <div class="info-card" style="text-align:left;margin-bottom:2rem">
+      <h3>Dónde recogerlo</h3>
+      <p class="muted" style="margin:0">{{DIRECCION}} · {{HORARIO_LV}}. Trae tu número de pedido o el email del recibo.</p>
+    </div>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-primary btn-arrow" href="{{ROOT}}tienda/index.html">Seguir comprando</a>
+      <a class="btn btn-accent" href="{{URL_RESERVAS}}" target="_blank" rel="noopener">Reservar pista</a>
+    </div>
+  </div>
+</section>

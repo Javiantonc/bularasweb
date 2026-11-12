@@ -1,0 +1,16 @@
+{
+  "name": "padel-bularas",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Web de Padel Bularas con tienda y pagos con Stripe",
+  "scripts": {
+    "build": "python3 build.py",
+    "dev": "node dev-server.mjs",
+    "test": "node tests/checkout.test.mjs"
+  },
+  "dependencies": {
+    "stripe": "^23.1.0"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,48 @@
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="logo" href="{{ROOT}}index.html" aria-label="Padel Bularas, ir al inicio">
+      <img class="logo-badge" src="{{ROOT}}img/logo-bularas-192.webp" width="50" height="50" alt="">
+      <span class="logo-text">PADEL <strong>BULARAS</strong></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Principal" id="main-nav" data-nav>
+      <ul class="nav-list">
+        <li><a href="{{ROOT}}instalaciones/index.html" {{CUR_instalaciones}}>Instalaciones</a></li>
+        <li class="has-dropdown" data-dropdown>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="dd-tarifas" {{CUR_tarifas}}>
+            Tarifas
+            <svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <ul class="dropdown" id="dd-tarifas">
+            <li><a href="{{ROOT}}tarifas/alquiler-pistas/index.html">Alquiler de pistas</a></li>
+            <li><a href="{{ROOT}}tarifas/clases-particulares/index.html">Clases particulares</a></li>
+            <li><a href="{{ROOT}}tarifas/escuela/index.html">Escuela</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ROOT}}comunidad/index.html" {{CUR_comunidad}}>Comunidad</a></li>
+        <li><a href="{{ROOT}}tienda/index.html" {{CUR_tienda}}>Tienda</a></li>
+        <li><a href="{{ROOT}}cafeteria/index.html" {{CUR_cafeteria}}>Cafetería</a></li>
+        <li><a href="{{ROOT}}contacto/index.html" {{CUR_contacto}}>Contacto</a></li>
+      </ul>
+      <div class="nav-mobile-extra">
+        <a class="btn btn-accent btn-block" href="{{URL_RESERVAS}}" target="_blank" rel="noopener">Reservar pista</a>
+        <p class="nav-mobile-contact">{{TELEFONO}} · {{EMAIL}}</p>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-ghost btn-call" href="tel:{{TELEFONO_LINK}}" aria-label="Llamar al club: {{TELEFONO}}">
+        {{ICON:telefono}}<span>Llamar</span>
+      </a>
+      <button class="icon-btn" type="button" data-cart-open aria-label="Abrir carrito">
+        {{ICON:bolsa}}<span class="cart-count" data-cart-count aria-hidden="true">0</span>
+      </button>
+      <a class="btn btn-accent btn-reserve" href="{{URL_RESERVAS}}" target="_blank" rel="noopener">Reservar</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>

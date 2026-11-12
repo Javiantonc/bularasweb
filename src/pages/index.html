@@ -1,0 +1,172 @@
+<!--
+title: Padel Bularas · Club de pádel en Pozuelo de Alarcón | 7 pistas cubiertas
+description: Club de pádel en Pozuelo de Alarcón con 7 pistas cubiertas abiertas todos los días de 9:00 a 23:30. Alquiler de pistas, clases, escuela para adultos y niños, competición y tienda online.
+schema: si
+preload: img/pista-red.webp
+-->
+
+<!-- HERO · carrusel a pantalla completa -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-slides" aria-hidden="true">
+    <div class="hero-slide is-active"><img src="{{ROOT}}img/pista-red.webp" alt="" width="800" height="600" fetchpriority="high"></div>
+    <div class="hero-slide"><img src="{{ROOT}}img/cubierta-led.webp" alt="" width="800" height="600"></div>
+    <div class="hero-slide"><img src="{{ROOT}}img/pista-vertical.webp" alt="" width="800" height="1066" style="object-position:50% 65%"></div>
+  </div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Club de pádel · {{CIUDAD}}</span>
+      <h1 id="hero-title"><span class="line">Mucho más</span> <span class="line accent">que pádel</span></h1>
+      <p class="hero-sub">Tu club de pádel en {{CIUDAD}}</p>
+      <p class="hero-text">Punto de encuentro, pistas de calidad, un equipo que cuida cada detalle y el mejor ambiente para jugar. Aquí siempre tienes partido.</p>
+      <div class="btn-row">
+        <a class="btn btn-accent btn-arrow" href="{{URL_RESERVAS}}" target="_blank" rel="noopener">Reservar pista</a>
+        <a class="btn btn-ghost" href="#tarifas">Ver tarifas</a>
+      </div>
+      <div class="hero-dots" role="group" aria-label="Cambiar imagen de fondo">
+        <button class="hero-dot is-active" type="button" aria-label="Imagen 1"></button>
+        <button class="hero-dot" type="button" aria-label="Imagen 2"></button>
+        <button class="hero-dot" type="button" aria-label="Imagen 3"></button>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Información rápida">
+      <h2>Hoy abrimos</h2>
+      <ul role="list">
+        <li>{{ICON:reloj}} De 9:00 a 23:30, también festivos</li>
+        <li>{{ICON:pista}} {{NUM_PISTAS}} pistas cubiertas</li>
+        <li>{{ICON:parking}} Parking gratuito</li>
+      </ul>
+      <a class="btn btn-ghost btn-sm btn-block" href="{{WA_URL}}" target="_blank" rel="noopener">{{ICON:whatsapp}} Escríbenos</a>
+    </aside>
+  </div>
+</section>
+
+<div class="stats-band">
+  <ul class="container stats" role="list">
+    <li class="stat"><strong>{{NUM_PISTAS}}</strong><span>Pistas cubiertas</span></li>
+    <li class="stat"><strong>+600</strong><span>Alumnos en la escuela</span></li>
+    <li class="stat"><strong>365</strong><span>Días abiertos</span></li>
+    <li class="stat"><strong>14,5 h</strong><span>De pádel al día</span></li>
+  </ul>
+</div>
+
+<!-- 01 · COMUNIDAD -->
+<section class="section section--ink" id="comunidad" aria-labelledby="comunidad-title">
+  <div class="container split split--wide">
+    <div class="reveal">
+      <span class="eyebrow"><span class="num">01</span> Comunidad</span>
+      <h2 id="comunidad-title">La familia <span class="accent">Bularas</span></h2>
+      <p class="lead">Aquí se viene a jugar, a mejorar y a competir. Pero sobre todo a pasarlo bien con gente que comparte tus ganas de pádel, dentro y fuera de la pista.</p>
+      <ul class="values reveal-stagger" role="list">
+        <li class="value"><div class="value-icon">{{ICON:esfuerzo}}</div><h3>Esfuerzo</h3><p>Cada entreno cuenta.</p></li>
+        <li class="value"><div class="value-icon">{{ICON:superacion}}</div><h3>Superación</h3><p>Hoy mejor que ayer.</p></li>
+        <li class="value"><div class="value-icon">{{ICON:respeto}}</div><h3>Respeto</h3><p>Al rival y al club.</p></li>
+        <li class="value"><div class="value-icon">{{ICON:diversion}}</div><h3>Diversión</h3><p>Se juega sonriendo.</p></li>
+        <li class="value"><div class="value-icon">{{ICON:familia}}</div><h3>Familia</h3><p>De 4 a 80 años.</p></li>
+        <li class="value"><div class="value-icon">{{ICON:companerismo}}</div><h3>Compañerismo</h3><p>Nadie juega solo.</p></li>
+      </ul>
+      <div class="btn-row" style="margin-top:2.5rem">
+        <a class="btn btn-accent btn-arrow" href="{{ROOT}}comunidad/index.html">Torneos y eventos</a>
+        <a class="btn btn-ghost" href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener">{{ICON:instagram}} {{INSTAGRAM}}</a>
+      </div>
+    </div>
+    <div class="framed reveal">
+      <img src="{{ROOT}}img/pista-vertical.webp" alt="Pista de Padel Bularas bajo la cubierta del club" width="800" height="1066" loading="lazy" style="aspect-ratio:4/5">
+      <div class="framed-badge"><strong>+600</strong><span>alumnos que ya son familia</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · INSTALACIONES -->
+<section class="section section--dark" id="instalaciones" aria-labelledby="inst-title">
+  <div class="container split split--reverse">
+    <div class="reveal">
+      <span class="eyebrow"><span class="num">02</span> Instalaciones</span>
+      <h2 id="inst-title">Pistas pensadas <span class="accent">por y para jugadores</span></h2>
+      <p class="lead">{{NUM_PISTAS}} pistas bajo cubierta con césped azul, cristal e iluminación LED. Juegas igual en enero que en agosto, y llegas, aparcas y a la pista.</p>
+      <ul class="amenities" role="list">
+        <li>{{ICON:pista}} {{NUM_PISTAS}} pistas cubiertas</li>
+        <li>{{ICON:led}} Iluminación LED</li>
+        <li>{{ICON:vestuario}} Vestuarios</li>
+        <li>{{ICON:parking}} Parking gratuito</li>
+        <li>{{ICON:cafe}} Cafetería</li>
+        <li>{{ICON:tienda}} Tienda y alquiler</li>
+      </ul>
+      <a class="btn btn-accent btn-arrow" href="{{ROOT}}instalaciones/index.html">Ver +</a>
+    </div>
+    <div class="framed reveal">
+      <img src="{{ROOT}}img/pista-red.webp" alt="Pista cubierta de Padel Bularas con red y césped azul" width="800" height="600" loading="lazy" style="aspect-ratio:4/3.4">
+    </div>
+  </div>
+</section>
+
+<!-- 03 · TARIFAS -->
+<section class="section section--alt" id="tarifas" aria-labelledby="tarifas-title">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <span class="eyebrow"><span class="num">03</span> Tarifas</span>
+        <h2 id="tarifas-title">Elige cómo quieres jugar</h2>
+      </div>
+      <p class="lead" style="max-width:420px;margin:0">Reserva tu pista, entrena a tu ritmo o apúntate a la escuela. Hay un plan para cada jugador.</p>
+    </div>
+    <div class="grid grid-3 reveal-stagger">
+      <a class="price-card" href="{{ROOT}}tarifas/alquiler-pistas/index.html">
+        <div class="price-card-media"><img src="{{ROOT}}img/pista-red.webp" alt="" width="800" height="600" loading="lazy"><span class="card-index">01</span><span class="price-tag"><small>Desde</small>{{PRECIO_PISTA_DESDE}}</span></div>
+        <div class="price-card-body"><h3>Alquiler de pistas</h3><p>Reserva en segundos desde Playtomic y juega cuando quieras, 60 o 90 minutos.</p><span class="link-arrow">Ver precios</span></div>
+      </a>
+      <a class="price-card" href="{{ROOT}}tarifas/clases-particulares/index.html">
+        <div class="price-card-media"><img src="{{ROOT}}img/cubierta-led.webp" alt="" width="800" height="600" loading="lazy"><span class="card-index">02</span><span class="price-tag"><small>Bono 10</small>{{PRECIO_CLASE_DESDE}}</span></div>
+        <div class="price-card-body"><h3>Clases particulares</h3><p>No vienes a pelotear: vienes a mejorar, con un plan hecho para ti.</p><span class="link-arrow">Ver precios</span></div>
+      </a>
+      <a class="price-card" href="{{ROOT}}tarifas/escuela/index.html">
+        <div class="price-card-media"><img src="{{ROOT}}img/pista-vertical.webp" alt="" width="800" height="1066" loading="lazy"><span class="card-index">03</span><span class="price-tag"><small>Desde</small>{{PRECIO_ESCUELA_DESDE}}</span></div>
+        <div class="price-card-body"><h3>Escuela</h3><p>Adultos y niños, grupos de máximo 4 por nivel. Extraescolares y campus de verano.</p><span class="link-arrow">Ver precios</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · TIENDA -->
+<section class="section" id="tienda" aria-labelledby="tienda-title">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <span class="eyebrow"><span class="num">04</span> Tienda online</span>
+        <h2 id="tienda-title">Equípate <span class="accent">como un Bularas</span></h2>
+        <p class="lead" style="margin:0">Compra online y recógelo gratis en el club. Pago seguro con tarjeta, Apple Pay o Google Pay.</p>
+      </div>
+      <a class="btn btn-primary btn-arrow" href="{{ROOT}}tienda/index.html">Ver toda la tienda</a>
+    </div>
+    <div class="rail reveal-stagger">{{FEATURED_PRODUCTS}}</div>
+  </div>
+</section>
+
+<!-- 05 · ¿DÓNDE ESTAMOS? -->
+<section class="section section--ink" id="donde" aria-labelledby="donde-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="num">05</span> ¿Dónde estamos?</span>
+      <h2 id="donde-title">En el corazón de <span class="accent">Pozuelo</span></h2>
+      <p class="lead">En la Avenida de Bularas, con parking gratuito en la puerta. Fácil de llegar, difícil de irse.</p>
+    </div>
+    <div class="reveal">{{INCLUDE:map}}</div>
+  </div>
+</section>
+
+<!-- 06 · PATROCINADORES -->
+{{INCLUDE:sponsors}}
+
+<!-- 07 · CONTACTO -->
+<section class="section section--alt" id="contacto" aria-labelledby="contacto-title">
+  <div class="container contact-grid">
+    <div>
+      <div class="reveal">
+        <span class="eyebrow"><span class="num">07</span> Contacto</span>
+        <h2 id="contacto-title">¿Hablamos?</h2>
+        <p class="lead">Reservas, clases, escuela, pedidos de la tienda o un torneo para tu empresa: cuéntanos y te ayudamos.</p>
+      </div>
+      {{INCLUDE:contact-blocks}}
+    </div>
+    <div class="reveal">{{INCLUDE:form}}</div>
+  </div>
+</section>

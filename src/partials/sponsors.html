@@ -1,0 +1,29 @@
+<section class="section" aria-labelledby="sponsors-title">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Colaboradores</span>
+      <h2 id="sponsors-title">Juegan en nuestro equipo</h2>
+    </div>
+  </div>
+  <!-- Carrusel infinito: la lista se repite dos veces (la segunda, aria-hidden) para que el bucle no tenga cortes.
+       Para añadir un patrocinador, copia un <a class="sponsor"> en las DOS listas. -->
+  <div class="marquee" aria-label="Patrocinadores y colaboradores">
+    <div class="marquee-track">
+      <ul class="marquee-track" style="animation:none;padding:0" role="list">
+        <li><a class="sponsor" href="https://www.head.com/es_ES/shop-padel" target="_blank" rel="noopener"><img src="{{ROOT}}img/patrocinador-head.webp" alt="HEAD" width="226" height="226"></a></li>
+        <li><a class="sponsor" href="https://fisioonearavaca.com/" target="_blank" rel="noopener"><img src="{{ROOT}}img/patrocinador-fisioone.webp" alt="Fisio One Aravaca" width="360" height="360"></a></li>
+        <li><a class="sponsor" href="https://www.publinserciones.com/" target="_blank" rel="noopener"><img src="{{ROOT}}img/patrocinador-publinserciones.webp" alt="Publinserciones" width="360" height="168"></a></li>
+        <li><a class="sponsor" href="https://playtomic.com/es/clubs/padel-bularas" target="_blank" rel="noopener"><span style="font:800 1.25rem/1 var(--font-body);letter-spacing:-.02em;color:var(--navy)">playtomic</span></a></li>
+        <li><span class="sponsor sponsor--placeholder">Tu marca<br>aquí</span></li>
+      </ul>
+      <ul class="marquee-track" style="animation:none;padding:0" role="list" aria-hidden="true">
+        <li><a class="sponsor" href="https://www.head.com/es_ES/shop-padel" target="_blank" rel="noopener" tabindex="-1"><img src="{{ROOT}}img/patrocinador-head.webp" alt="" width="226" height="226"></a></li>
+        <li><a class="sponsor" href="https://fisioonearavaca.com/" target="_blank" rel="noopener" tabindex="-1"><img src="{{ROOT}}img/patrocinador-fisioone.webp" alt="" width="360" height="360"></a></li>
+        <li><a class="sponsor" href="https://www.publinserciones.com/" target="_blank" rel="noopener" tabindex="-1"><img src="{{ROOT}}img/patrocinador-publinserciones.webp" alt="" width="360" height="168"></a></li>
+        <li><a class="sponsor" href="https://playtomic.com/es/clubs/padel-bularas" target="_blank" rel="noopener" tabindex="-1"><span style="font:800 1.25rem/1 var(--font-body);letter-spacing:-.02em;color:var(--navy)">playtomic</span></a></li>
+        <li><span class="sponsor sponsor--placeholder">Tu marca<br>aquí</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="container muted" style="text-align:center;margin-top:1.5rem;font-size:.92rem">¿Quieres que tu marca esté con nosotros? <a href="mailto:{{EMAIL}}">Escríbenos</a>.</p>
+</section>

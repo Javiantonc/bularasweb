@@ -1,0 +1,44 @@
+{
+  "_instrucciones": "Datos reales tomados de padelbularas.com y de la ficha de Playtomic (nov. 2026). Lo que va entre corchetes falta por confirmar con el club. Tras editar, ejecuta: python3 build.py",
+
+  "CLUB": "Padel Bularas",
+  "CIUDAD": "Pozuelo de Alarcón",
+  "DIRECCION": "Av. de Bularas, 1 · 28224 Pozuelo de Alarcón, Madrid",
+  "CALLE": "Av. de Bularas, 1",
+  "CP": "28224",
+  "PROVINCIA": "Madrid",
+
+  "TELEFONO": "689 48 49 44",
+  "TELEFONO_LINK": "+34689484944",
+  "WHATSAPP": "689 48 49 44",
+  "WHATSAPP_LINK": "34689484944",
+  "WHATSAPP_MENSAJE": "Hola Padel Bularas, quiero información sobre…",
+  "EMAIL": "direccion@padelbularas.com",
+  "INSTAGRAM": "@padelbularas",
+  "INSTAGRAM_URL": "https://www.instagram.com/padelbularas",
+  "TIKTOK": "@padelbularas",
+  "TIKTOK_URL": "https://www.tiktok.com/@padelbularas",
+  "LINKEDIN_URL": "https://www.linkedin.com/company/padel-bularas-pozuelo/",
+
+  "URL_RESERVAS": "https://playtomic.io/tenant/99bc102b-4699-4e09-9ecc-602aa7de550a",
+  "URL_WEB": "https://padelbularas.com",
+  "MAPS_URL": "https://maps.app.goo.gl/M2stU6qJD9Usmqw46",
+  "MAPS_EMBED": "https://www.google.com/maps?q=Av.+de+Bularas+1,+28224+Pozuelo+de+Alarc%C3%B3n&output=embed",
+  "NORMATIVA_URL": "https://www.padelbularas.com/assets/Normativa%20Club%20P%C3%A1del%20Bularas%20Temporada%202025-2026.docx-Cx5Hz8lQ.pdf",
+
+  "NUM_PISTAS": "7",
+  "TIPO_PISTAS": "cubiertas",
+
+  "HORARIO_LV": "Todos los días: 9:00 – 23:30",
+  "HORARIO_FS": "Festivos incluidos",
+  "HORARIO_SCHEMA": "Mo-Su 09:00-23:30",
+
+  "PRECIO_PISTA_DESDE": "[XX] €",
+  "PRECIO_CLASE_DESDE": "485 €",
+  "PRECIO_ESCUELA_DESDE": "165 €/trim.",
+
+  "TITULAR_RAZON_SOCIAL": "Pozuelo Pádel Sport S.L.",
+  "CIF": "B87544813",
+  "DOMICILIO_SOCIAL": "C/ Velero, 8, Majadahonda (Madrid)",
+  "ANIO": "2026"
+}

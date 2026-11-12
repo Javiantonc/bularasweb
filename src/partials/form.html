@@ -1,0 +1,49 @@
+<!-- Formulario de contacto.
+     Para recibirlo por email, crea un formulario gratis en https://formspree.io
+     y pega su URL en data-endpoint="https://formspree.io/f/XXXX".
+     Mientras esté vacío, el mensaje se envía por WhatsApp al club. -->
+<form class="form" data-form data-endpoint="" data-wa="{{WHATSAPP_LINK}}" novalidate>
+  <h3>Escríbenos</h3>
+  <p class="muted">Te respondemos en menos de 24 horas. Si tienes prisa, llámanos o escríbenos por WhatsApp.</p>
+  <div class="form-grid">
+    <div class="field">
+      <label for="f-nombre">Nombre *</label>
+      <input id="f-nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="f-nombre-error">
+      <p class="field-error" id="f-nombre-error" aria-live="polite"></p>
+    </div>
+    <div class="field">
+      <label for="f-email">Email *</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-error">
+      <p class="field-error" id="f-email-error" aria-live="polite"></p>
+    </div>
+    <div class="field">
+      <label for="f-telefono">Teléfono</label>
+      <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">
+    </div>
+    <div class="field">
+      <label for="f-motivo">Motivo *</label>
+      <select id="f-motivo" name="motivo" required aria-describedby="f-motivo-error">
+        <option value="">Elige una opción</option>
+        <option>Reserva de pista</option>
+        <option>Clases particulares</option>
+        <option>Academia / escuela</option>
+        <option>Competición</option>
+        <option>Extraescolares o campus</option>
+        <option>Eventos y torneos</option>
+        <option>Otro</option>
+      </select>
+      <p class="field-error" id="f-motivo-error" aria-live="polite"></p>
+    </div>
+    <div class="field full">
+      <label for="f-mensaje">Mensaje *</label>
+      <textarea id="f-mensaje" name="mensaje" required aria-describedby="f-mensaje-error"></textarea>
+      <p class="field-error" id="f-mensaje-error" aria-live="polite"></p>
+    </div>
+    <div class="field full">
+      <label class="checkbox"><input id="f-privacidad" name="privacidad" type="checkbox" required aria-describedby="f-privacidad-error"> <span>He leído y acepto la <a href="{{ROOT}}legal/privacidad/index.html">política de privacidad</a>. *</span></label>
+      <p class="field-error" id="f-privacidad-error" aria-live="polite"></p>
+    </div>
+  </div>
+  <button class="btn btn-primary btn-arrow" type="submit">Enviar mensaje</button>
+  <div class="form-status" role="status" hidden></div>
+</form>

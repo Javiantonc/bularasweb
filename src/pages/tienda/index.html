@@ -1,0 +1,56 @@
+<!--
+title: Tienda online de pádel · Palas, pelotas y textil | Padel Bularas Pozuelo
+description: Tienda online de Padel Bularas: palas, pelotas, textil oficial del club y accesorios. Compra online con pago seguro y recógelo gratis en el club, en Pozuelo de Alarcón.
+nav: tienda
+-->
+<section class="page-hero">
+  <div class="page-hero-media"><img src="{{ROOT}}img/cubierta-led.webp" alt="" width="800" height="600" fetchpriority="high"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{ROOT}}index.html">Inicio</a></li><li aria-current="page">Tienda</li></ol>
+    <span class="eyebrow">Tienda online</span>
+    <h1>La tienda <span class="accent">del club</span></h1>
+    <p class="lead">Palas, pelotas, textil oficial y accesorios. Compra online, paga seguro y recógelo gratis en el club.</p>
+    <div class="btn-row"><a class="btn btn-accent btn-arrow" href="#catalogo">Ver productos</a><button class="btn btn-ghost" type="button" data-cart-open>{{ICON:bolsa}} Mi carrito</button></div>
+  </div>
+</section>
+
+<div class="stats-band">
+  <ul class="container stats" role="list">
+    <li class="stat"><strong>0 €</strong><span>Recogida en el club</span></li>
+    <li class="stat"><strong>100 %</strong><span>Pago seguro con Stripe</span></li>
+    <li class="stat"><strong>14 días</strong><span>Cambios y devoluciones</span></li>
+    <li class="stat"><strong>24 h</strong><span>Pedido listo para recoger</span></li>
+  </ul>
+</div>
+
+<section class="section" id="catalogo" aria-labelledby="catalogo-title">
+  <div class="container">
+    <h2 id="catalogo-title" class="visually-hidden">Catálogo</h2>
+    <p class="demo-note">{{ICON:camara}}<span><strong>Catálogo de muestra.</strong> Estos productos son de ejemplo para enseñar cómo funciona la tienda. Se sustituirán por los artículos reales del club con sus fotos y precios.</span></p>
+    <div class="shop-toolbar">
+      <div class="filters" role="group" aria-label="Filtrar por categoría">{{SHOP_FILTERS}}</div>
+      <div class="sort" style="display:flex;gap:1rem;align-items:center">
+        <span class="muted" data-results aria-live="polite">{{NUM_PRODUCTOS}} productos</span>
+        <label class="visually-hidden" for="orden">Ordenar</label>
+        <select id="orden" data-sort>
+          <option value="destacados">Destacados</option>
+          <option value="precio-asc">Precio: menor a mayor</option>
+          <option value="precio-desc">Precio: mayor a menor</option>
+        </select>
+      </div>
+    </div>
+    <div class="products" data-products>
+{{PRODUCTS_GRID}}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="grid grid-3 reveal-stagger">
+      <div class="info-card"><div class="value-icon">{{ICON:tienda}}</div><h3>Recogida en el club</h3><p class="muted">Sin gastos de envío. Te avisamos cuando tu pedido esté listo en recepción, de 9:00 a 23:30.</p></div>
+      <div class="info-card"><div class="value-icon">{{ICON:candado}}</div><h3>Pago seguro</h3><p class="muted">Pagas en la pasarela de Stripe con tarjeta, Apple Pay o Google Pay. Nosotros nunca vemos los datos de tu tarjeta.</p></div>
+      <div class="info-card"><div class="value-icon">{{ICON:devolucion}}</div><h3>Cambios fáciles</h3><p class="muted">¿No te queda bien la talla? Tienes 14 días para cambiarlo o devolverlo en el club. <a href="{{ROOT}}legal/condiciones-venta/index.html">Condiciones</a>.</p></div>
+    </div>
+  </div>
+</section>

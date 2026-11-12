@@ -1,0 +1,118 @@
+{
+  "_instrucciones": "Catálogo de la tienda. precio y precio_anterior en euros (IVA incluido). imagen: ruta dentro de src/img/tienda/. Productos con \"ejemplo\": true solo se pueden pagar en modo test de Stripe; bórralos cuando subas los reales. Tras editar: python3 build.py",
+  "categorias": ["Palas", "Pelotas", "Textil", "Accesorios"],
+  "productos": [
+    {
+      "id": "pala-control-pro",
+      "nombre": "Pala Control Pro",
+      "categoria": "Palas",
+      "precio": 149.90,
+      "precio_anterior": 179.90,
+      "imagen": "tienda/pala.svg",
+      "descripcion": "Pala redonda de control, núcleo blando y punto dulce amplio. Ideal para jugadores de nivel iniciación e intermedio que buscan precisión y confort.",
+      "detalles": ["Forma redonda", "Núcleo EVA soft", "Peso 360–370 g", "Incluye funda"],
+      "stock": 6,
+      "destacado": true,
+      "ejemplo": true
+    },
+    {
+      "id": "pala-power-lite",
+      "nombre": "Pala Power Lite",
+      "categoria": "Palas",
+      "precio": 189.00,
+      "imagen": "tienda/pala-2.svg",
+      "descripcion": "Pala de forma lágrima con balance equilibrado: potencia en el remate sin renunciar al control.",
+      "detalles": ["Forma lágrima", "Carbono 12K", "Peso 355–365 g"],
+      "stock": 4,
+      "destacado": false,
+      "ejemplo": true
+    },
+    {
+      "id": "bote-pelotas",
+      "nombre": "Bote de 3 pelotas",
+      "categoria": "Pelotas",
+      "precio": 5.50,
+      "imagen": "tienda/pelotas.svg",
+      "descripcion": "Bote presurizado de 3 pelotas de competición. Las de siempre para tu partido en Bularas.",
+      "detalles": ["3 pelotas", "Presurizadas"],
+      "stock": 120,
+      "destacado": true,
+      "ejemplo": true
+    },
+    {
+      "id": "pack-pelotas-24",
+      "nombre": "Pack 8 botes de pelotas",
+      "categoria": "Pelotas",
+      "precio": 39.90,
+      "precio_anterior": 44.00,
+      "imagen": "tienda/pelotas-pack.svg",
+      "descripcion": "8 botes (24 pelotas) a precio de club. Perfecto para grupos y entrenamientos.",
+      "detalles": ["24 pelotas", "Ahorra más de 4 €"],
+      "stock": 30,
+      "destacado": false,
+      "ejemplo": true
+    },
+    {
+      "id": "camiseta-club",
+      "nombre": "Camiseta técnica Bularas",
+      "categoria": "Textil",
+      "precio": 29.90,
+      "imagen": "tienda/camiseta.svg",
+      "descripcion": "La camiseta oficial del club. Tejido técnico transpirable y escudo bordado.",
+      "detalles": ["Tejido técnico", "Escudo del club", "Corte unisex"],
+      "variantes": { "nombre": "Talla", "opciones": ["XS", "S", "M", "L", "XL", "XXL"] },
+      "stock": 40,
+      "destacado": true,
+      "ejemplo": true
+    },
+    {
+      "id": "sudadera-club",
+      "nombre": "Sudadera Bularas",
+      "categoria": "Textil",
+      "precio": 44.90,
+      "imagen": "tienda/sudadera.svg",
+      "descripcion": "Sudadera con capucha en azul noche para el calentamiento y el tercer tiempo.",
+      "detalles": ["Algodón perchado", "Capucha y bolsillo canguro"],
+      "variantes": { "nombre": "Talla", "opciones": ["S", "M", "L", "XL"] },
+      "stock": 20,
+      "destacado": false,
+      "ejemplo": true
+    },
+    {
+      "id": "paletero-club",
+      "nombre": "Paletero Bularas",
+      "categoria": "Accesorios",
+      "precio": 54.90,
+      "imagen": "tienda/paletero.svg",
+      "descripcion": "Paletero con compartimento térmico para dos palas y bolsillo para zapatillas.",
+      "detalles": ["Compartimento térmico", "Bolsillo zapatillero"],
+      "stock": 10,
+      "destacado": true,
+      "ejemplo": true
+    },
+    {
+      "id": "overgrip-3",
+      "nombre": "Overgrip (pack 3)",
+      "categoria": "Accesorios",
+      "precio": 7.90,
+      "imagen": "tienda/overgrip.svg",
+      "descripcion": "Pack de 3 overgrips de tacto seco. Cambia el grip y nota la diferencia.",
+      "detalles": ["3 unidades", "Tacto seco"],
+      "stock": 60,
+      "destacado": false,
+      "ejemplo": true
+    },
+    {
+      "id": "gorra-club",
+      "nombre": "Gorra Bularas",
+      "categoria": "Textil",
+      "precio": 17.90,
+      "imagen": "tienda/gorra.svg",
+      "descripcion": "Gorra ajustable con el escudo del club.",
+      "detalles": ["Talla única ajustable"],
+      "stock": 0,
+      "destacado": false,
+      "ejemplo": true
+    }
+  ]
+}

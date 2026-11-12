@@ -1,0 +1,87 @@
+<!--
+title: Alquiler de pistas de pádel en Pozuelo · Precios | Padel Bularas
+description: Precios de alquiler de pistas de pádel en Pozuelo de Alarcón. Partidos de 60 y 90 minutos en horario valle y punta. Reserva online en Playtomic.
+nav: tarifas
+-->
+<section class="page-hero">
+  <div class="page-hero-media"><img src="{{ROOT}}img/pista-red.webp" alt="" width="800" height="600" fetchpriority="high"></div>
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="{{ROOT}}index.html">Inicio</a></li><li>Tarifas</li><li aria-current="page">Alquiler de pistas</li></ol>
+    <span class="eyebrow">Tarifas</span>
+    <h1>Alquiler de <span class="accent">pistas</span></h1>
+    <p class="lead">Elige hora, reserva en Playtomic y a jugar. Todos los días de 9:00 a 23:30, festivos incluidos.</p>
+    <div class="btn-row"><a class="btn btn-accent btn-arrow" href="{{URL_RESERVAS}}" target="_blank" rel="noopener">Reservar ahora</a></div>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="precios-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Precios por pista</span>
+      <h2 id="precios-title">Tú eliges la duración</h2>
+      <p class="lead">El precio es por pista (para los 4 jugadores). Hora valle y hora punta según la franja.</p>
+    </div>
+    <div class="reveal">
+      <div class="tabs" role="tablist" aria-label="Duración del partido">
+        <button class="tab" role="tab" id="t-90" aria-selected="true" aria-controls="p-90">90 minutos</button>
+        <button class="tab" role="tab" id="t-60" aria-selected="false" aria-controls="p-60" tabindex="-1">60 minutos</button>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="p-90" aria-labelledby="t-90">
+        <div class="table-wrap">
+          <table class="price-table">
+            <caption>Partido de 90 minutos</caption>
+            <thead><tr><th scope="col">Franja</th><th scope="col">Horario</th><th scope="col">Precio pista</th><th scope="col">Por jugador</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Valle</th><td>[L–V 9:00–17:00]</td><td class="price">[XX] €</td><td>[XX] €</td></tr>
+              <tr><th scope="row">Punta</th><td>[L–V 17:00–23:30]</td><td class="price">[XX] €</td><td>[XX] €</td></tr>
+              <tr><th scope="row">Fin de semana y festivos</th><td>9:00–23:30</td><td class="price">[XX] €</td><td>[XX] €</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="p-60" aria-labelledby="t-60" hidden>
+        <div class="table-wrap">
+          <table class="price-table">
+            <caption>Partido de 60 minutos</caption>
+            <thead><tr><th scope="col">Franja</th><th scope="col">Horario</th><th scope="col">Precio pista</th><th scope="col">Por jugador</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Valle</th><td>[L–V 9:00–17:00]</td><td class="price">[XX] €</td><td>[XX] €</td></tr>
+              <tr><th scope="row">Punta</th><td>[L–V 17:00–23:30]</td><td class="price">[XX] €</td><td>[XX] €</td></tr>
+              <tr><th scope="row">Fin de semana y festivos</th><td>9:00–23:30</td><td class="price">[XX] €</td><td>[XX] €</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="table-note">IVA incluido. El precio final y la disponibilidad en tiempo real se muestran en Playtomic al reservar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="como-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Cómo reservar</span>
+      <h2 id="como-title">En tres pasos</h2>
+    </div>
+    <div class="grid grid-3 reveal-stagger">
+      <div class="info-card"><span class="feature-num" style="font-family:var(--font-display);font-size:3rem;color:var(--blue)">01</span><h3>Entra en Playtomic</h3><p class="muted">Desde la web o la app, busca Padel Bularas o pulsa cualquier botón «Reservar».</p></div>
+      <div class="info-card"><span class="feature-num" style="font-family:var(--font-display);font-size:3rem;color:var(--blue)">02</span><h3>Elige pista y hora</h3><p class="muted">Ves la disponibilidad de las {{NUM_PISTAS}} pistas al momento. 60 o 90 minutos.</p></div>
+      <div class="info-card"><span class="feature-num" style="font-family:var(--font-display);font-size:3rem;color:var(--blue)">03</span><h3>Paga y juega</h3><p class="muted">Pago online y, si quieres, divides el importe entre los cuatro jugadores.</p></div>
+    </div>
+    <div class="grid grid-2 reveal-stagger" style="margin-top:1.75rem">
+      <div class="info-card">
+        <h3>Antes de reservar</h3>
+        <ul class="check-list">
+          <li>Las reservas son solo para jugar: no se permite impartir clases externas.</li>
+          <li>Trae calzado de pádel para cuidar el césped.</li>
+          <li>Consulta la <a href="{{NORMATIVA_URL}}" target="_blank" rel="noopener">normativa del club (PDF)</a>.</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h3>¿Te falta material?</h3>
+        <p class="muted">Alquilamos palas y tenemos pelotas a la venta en la tienda del club. Pregúntanos al llegar.</p>
+        <a class="btn btn-ghost-dark btn-sm" href="{{WA_URL}}" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
